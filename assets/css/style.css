@@ -49,6 +49,9 @@ html {
 #nav li:hover .subnav {
     display: block;
 }
+#nav .arrow-down-icon {
+    font-size: 12px;
+}
 #nav .subnav {
     display: none;
     position: absolute;
