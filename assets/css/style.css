@@ -32,7 +32,7 @@ html {
 } 
 .row {
     margin: 0 -8px;
-    padding: 32px 0;
+
 }
 .row::after {
     content: "";
@@ -41,12 +41,17 @@ html {
 }
 .col {
     float: left;
+    padding: 0 8px;
 }
 .col-three {
     width: 33.33333%;
-    padding: 0 8px;
 }
-
+.col-two {
+    width: 50%;
+}
+.col-full {
+    width: 100%;
+}
 /* Scpecific */
 /* Header begin */
 #header{    
@@ -178,6 +183,9 @@ html {
     line-height: 1.4;
     text-align: justify;
 }
+.member-list {
+    padding: 32px 0;
+}
 .member-img {
     width: 149px;
 }
@@ -207,6 +215,9 @@ html {
     padding: 2px 8px ;
     border-radius: 50%;
 }
+.places-list {
+    padding: 32px 0;
+}
 .place-img {
     width: 100%;
     display: block;
@@ -233,6 +244,13 @@ html {
 }
 .place-body .btn {
     display: inline-block;
+}
+.contact-section input {
+    padding: 8px;
+    font-size: 15px;
+}
+.content-section .email{
+    width: 100%;
 }
 #footer {
 
