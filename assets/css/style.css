@@ -8,6 +8,20 @@ html {
 }
 /* Common */
 
+.row {
+    padding: 32px 0;
+}
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.col {
+    float: left;
+}
+.col-three {
+    width: 33.33333%;
+}
 
 /* Scpecific */
 /* Header begin */
@@ -111,12 +125,12 @@ html {
     color: white;
 }
 #content {
+    
+}
+#content .content-section {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-
-}
-#content .content-section {
     padding: 64px 0;
 }
 #content .content-section .heading-section {
@@ -141,8 +155,18 @@ html {
     line-height: 1.4;
     text-align: justify;
 }
-#content .content-section .member-list {
-    float: left;
+.about-section .member-list {
+
+}
+.about-section .member-item {
+    text-align: center;
+}
+.member-list .member-img {
+    width: 149px;
+}
+.member-list .member-name {
+    font-size: 15px;
+    margin: 15px 0;
 }
 #footer {
 
