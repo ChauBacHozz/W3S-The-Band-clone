@@ -7,8 +7,31 @@ html {
     font-family: sans-serif;
 }
 /* Common */
-
+.btn:hover {
+    background-color: #ccc;
+    color: black;
+}
+.btn {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 12px 16px;
+}
+.pull-right {
+    float: right !important;
+}
+.bg-black {
+    background-color: black !important;
+}
+.text-white {
+    color: white !important;
+}
+.text-center {
+    text-align: center !important;
+} 
 .row {
+    margin: 0 -8px;
     padding: 32px 0;
 }
 .row::after {
@@ -21,11 +44,13 @@ html {
 }
 .col-three {
     width: 33.33333%;
+    padding: 0 8px;
 }
 
 /* Scpecific */
 /* Header begin */
 #header{    
+    z-index: 1;
     height: 46px;
     background-color: black;
     position: fixed;
@@ -139,14 +164,12 @@ html {
     font-weight: 500;
     font-size: 30px;
     letter-spacing: 4px;
-    text-align: center;
 }
 #content .content-section .sub-heading-section {
     margin: 15px 0;
     opacity: 60%;
     font-size: 15px;
     font-style: italic;
-    text-align: center;
     
 }
 #content .content-section .text-section {
@@ -155,18 +178,61 @@ html {
     line-height: 1.4;
     text-align: justify;
 }
-.about-section .member-list {
-
-}
-.about-section .member-item {
-    text-align: center;
-}
-.member-list .member-img {
+.member-img {
     width: 149px;
 }
-.member-list .member-name {
+.member-name {
     font-size: 15px;
     margin: 15px 0;
+}
+.tickets-list {
+    list-style-type: none;
+    font-size: 15px;
+    background-color: white;
+    margin-top: 46px;
+}
+.tickets-list li {
+    border-bottom: 1px solid #ccc;
+    padding: 8px 16px ;
+    color: #757575;
+}
+.tickets-list li .sold-out {
+    background-color: #f44336;
+    padding: 3px 8px;
+    margin-left: 16px;
+}
+.tickets-list li .quantity {
+    margin-top: -2px;
+    margin-right: 16px;
+    padding: 2px 8px ;
+    border-radius: 50%;
+}
+.place-img {
+    width: 100%;
+    display: block;
+}
+.place-img:hover {
+    opacity: 60%;
+}
+.place-body {
+    background-color: white;
+    padding: 16px;
+    font-size: 15px;
+}
+.place-body .text-heading {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.place-body .text-date {
+    opacity: 60%;
+    margin: 15px 0;
+}
+.place-body .text-desc {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+.place-body .btn {
+    display: inline-block;
 }
 #footer {
 
