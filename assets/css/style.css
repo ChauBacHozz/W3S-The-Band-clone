@@ -285,3 +285,68 @@ html {
 #footer p a {
     color: black;
 }
+.modal {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content {
+    position: relative;
+    width: 900px;
+    background-color: white;
+}.modal-close:hover {
+    opacity: 40%;
+    cursor: pointer;
+}
+.modal-close {
+    position: absolute;
+    right: 0;
+    padding: 16px;
+    color: white;
+    opacity: 80%;
+}
+.modal-heading {
+    height: 130px;
+    background-color: #009688;
+    line-height: 130px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 2px;
+}
+.modal-body {
+    padding: 4px 16px;
+}
+.modal-label {
+    display: block;
+    margin: 12px 0;
+}
+.modal-input {
+    font-size: 15px;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+.modal-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #009688;
+    padding: 16px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.modal-help {
+    margin: 32px 0;
+    text-align: right;
+}
+.modal-help .link-text {
+    color: #2196F3;
+}
