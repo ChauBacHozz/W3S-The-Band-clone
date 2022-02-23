@@ -85,7 +85,7 @@
                                 <p class="text-desc ">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="btn">Buy Tickets</button>
+                                <button class="btn js-tour-btn">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="col col-three">
@@ -96,7 +96,7 @@
                                 <p class="text-desc ">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="btn">Buy Tickets</button>
+                                <button class="btn js-tour-btn">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="col col-three">
@@ -107,7 +107,7 @@
                                 <p class="text-desc ">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <button class="btn">Buy Tickets</button>
+                                <button class="btn js-tour-btn">Buy Tickets</button>
                             </div>
                         </div>
                     </div>
@@ -173,23 +173,23 @@
 
     </div>
 
-    <div class="modal">
-       <div class="modal-content">
-           <div class="modal-close">
+    <div class="modal js-modal">
+       <div class="modal-content js-modal-ctn">
+           <div class="modal-close js-modal-close">
                <i class="ti-close"></i>
            </div>
            <div class="modal-heading">
                <i class="ti-bag"></i> Tickets
            </div>
            <div class="modal-body">
-               <label for="" class="modal-label">
+               <label for="modal-quantity" class="modal-label">
                    <i class="ti-shopping-cart"></i> Tickets, $15 per person
                </label>
-               <input type="text" placeholder="How many?" class="modal-input">
-               <label for="" class="modal-label">
+               <input id="modal-quantity" type="text" placeholder="How many?" class="modal-input">
+               <label for="modal-email" class="modal-label">
                    <i class="ti-user"></i>  Send To
                </label>
-               <input type="text" placeholder="How many?" class="modal-input">
+               <input id="modal-email" type="text" placeholder="Enter email" class="modal-input">
                <a href="#" class="modal-btn">PAY <i class="ti-check"></i></a>
                <div class="modal-help">Need <a href="#" class="link-text">help?</a></div>
            </div>
@@ -198,7 +198,26 @@
     </div>
 
     <script>
-        
+        const modal = document.querySelector('.js-modal');
+        const tourBtns = document.querySelectorAll('.js-tour-btn');
+        const clsBtn = document.querySelector('.js-modal-close');
+        const modalctn = document.querySelector('.js-modal-ctn');
+
+        function openModal () {
+            modal.classList.add('open');
+        }
+        function closeModal () {
+            modal.classList.remove('open');
+        }
+
+        for (const btn of tourBtns ) {
+            btn.addEventListener('click', openModal);
+        }
+        clsBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', closeModal);
+        modalctn.addEventListener('click', function (event) {
+            event.stopPropagation();
+        })
     </script>
 </body>
 </html>
