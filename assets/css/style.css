@@ -84,7 +84,7 @@ html {
 }
 #nav > li {
     display: inline-block;
-
+    padding: 0 24px;
 } 
 #nav li {
     position: relative;
@@ -98,8 +98,13 @@ html {
     color: white;
     text-decoration: none;
     line-height: 46px;
-    padding: 0 24px;
+
     display: inline-block;
+}
+
+#nav > li:hover {
+    background-color: #ccc;
+
 }
 #nav .subnav li:hover a,
 #nav > li:hover >  a {
@@ -123,6 +128,12 @@ html {
     padding: 0 18px;
     
     display: block;
+}
+#header .mobile-menu-btn {
+    top: 0;
+    right: 0;
+    position: absolute;
+    display: none;
 }
 #header .mobile-menu-btn,
 #header .search-icon-section {
