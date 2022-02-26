@@ -74,6 +74,7 @@ html {
     left: 0;
     right: 0;
     top: 0;
+    overflow: hidden;
 }
 #nav{
     display: inline-block;
@@ -123,15 +124,25 @@ html {
     
     display: block;
 }
+#header .mobile-menu-btn,
 #header .search-icon-section {
+    padding: 0 21px;
     float: right;
+}
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+
+}
+#header .mobile-menu-btn:hover .menu-icon{
+    color: black;
+    
 }
 #header .search-icon-section:hover {
     background-color: #f44336;
     cursor: pointer;
 }
+#header .menu-icon,
 #header .search-icon {
-    padding: 0 21px;
     line-height: 46px;
     color: white;
     

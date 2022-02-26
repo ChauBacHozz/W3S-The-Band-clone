@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
     <link rel="stylesheet" href="/assets/fonts/themify-icons/themify-icons.css">
     <title>The band</title>
 </head>
@@ -30,6 +31,10 @@
 
             <div class="search-icon-section">
                 <i class="search-icon ti-search"></i>
+            </div>
+
+            <div class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
         </div>
 
@@ -202,7 +207,11 @@
         const tourBtns = document.querySelectorAll('.js-tour-btn');
         const clsBtn = document.querySelector('.js-modal-close');
         const modalctn = document.querySelector('.js-modal-ctn');
-
+        const header = document.getElementById('header');
+        const menu = document.querySelector('.mobile-menu-btn');
+        let headerHeight = header.clientHeight;
+        
+        const menuItem = document.querySelectorAll('#nav li a[href*="#"]')
         function openModal () {
             modal.classList.add('open');
         }
@@ -218,6 +227,22 @@
         modalctn.addEventListener('click', function (event) {
             event.stopPropagation();
         })
+
+        menu.onclick = function() {
+            // alert('HEllo');
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+        for (const item of menuItem) {
+            item.onclick = function () {
+                header.style.height = null;
+
+            }
+        }
     </script>
 </body>
 </html>
