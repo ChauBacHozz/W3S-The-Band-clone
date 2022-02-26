@@ -32,7 +32,7 @@
             <div class="mobile-menu-btn">
                 <i class="menu-icon ti-menu"></i>
             </div>
-            
+
             <div class="search-icon-section">
                 <i class="search-icon ti-search"></i>
             </div>
@@ -237,12 +237,19 @@
             } else {
                 header.style.height = null;
             }
+
         }
         for (const item of menuItem) {
-            item.onclick = function () {
-                header.style.height = null;
-
+            item.onclick = function (event) {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (isParentMenu) {
+                    event.preventDefault();
+                }
+                else {
+                    header.style.height = null;
+                }
             }
+
         }
     </script>
 </body>
