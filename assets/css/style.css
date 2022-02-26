@@ -168,9 +168,10 @@ html {
 }
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0;
+    padding: 64px 16px;
 }
 #content .content-section .heading-section {
     line-height: 1.5;
