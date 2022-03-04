@@ -1,4 +1,24 @@
-@media (max-width: 740px) {
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+
+}
+
+/* Tablet and mobile */
+@media (max-width: 9375em) {
+    .btn {
+        padding: 15px 16px;
+    }
+    .form-control {
+        padding: 15px;
+    }
+    #footer i {
+        font-size: 32px;
+        margin: 0 8px;
+    }
+}
+/* Mobile */
+@media (max-width: 46.1875em) {
     #header {
         overflow: hidden;
     }
@@ -31,8 +51,8 @@
     .s-display-none {
         display: none;
     }
-    .contact-form {
-        margin-top: 16px;
+    .form-content {
+        margin-top: 32px;
     }
     .s-full-width {
         width: 100%;

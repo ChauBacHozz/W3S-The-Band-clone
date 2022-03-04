@@ -27,6 +27,7 @@ html {
     text-decoration: none;
     border: none;
     padding: 10px 14px;
+    appearance: none;
 }
 .pull-right {
     float: right !important;
@@ -163,7 +164,7 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url(/assets/img/slider/slider1.jpg) top center / cover no-repeat;
+    background: url(../img/slider/slider1.jpg) top center / cover no-repeat;
 }
 #slider .content-section {
     padding: 32px 16px;
@@ -171,6 +172,7 @@ html {
     text-align: center;
     position: absolute;
     bottom: 0;
+    text-shadow: 0 0 4px #000;
 }
 #slider .heading-section {
     font-size: 25px;
@@ -281,6 +283,9 @@ html {
 }
 .contact-content {
     padding: 32px 0;
+}
+.contact-content i {
+    margin-right: 16px;
 }
 .contact-text {
     font-size: 18px;
