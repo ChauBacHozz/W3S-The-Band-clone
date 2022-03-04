@@ -21,4 +21,20 @@
     #header .search-icon-section {
         display: none;
     }
+
+    #content .member-img {
+        width: 60%;
+    }
+    .s-col-full {
+        width: 100%;
+    }
+    .s-display-none {
+        display: none;
+    }
+    .contact-form {
+        margin-top: 16px;
+    }
+    .s-full-width {
+        width: 100%;
+    }
 }

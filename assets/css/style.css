@@ -247,7 +247,7 @@ html {
     border-radius: 50%;
 }
 .places-list {
-    padding: 32px 0;
+    padding: 16px 0;
 }
 .place-img {
     width: 100%;
@@ -275,6 +275,7 @@ html {
     display: inline-block;
 }
 .form-control {
+    font-size: 15px;
     padding: 10px;
     width: 100%;
 }
